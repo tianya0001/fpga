@@ -1,0 +1,16 @@
+
+
+	reg clk;
+	reg cin;
+	reg rstn;
+	
+	wire cout;
+	wire [3:0]q;
+
+	BCD_counter cnt0(
+					.Clk(clk), 
+					.Cin(cin), 
+					.Rst_n(rstn), 
+					.Cout(cout), 
+					.q(q)
+	);

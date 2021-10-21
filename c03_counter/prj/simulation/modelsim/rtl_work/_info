@@ -1,0 +1,25 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\fpga\counter\prj\simulation\modelsim
+vcounter
+!i10b 1
+!s100 hU_H?09>Hmbn00c^`zO7f3
+I1o?QMIg5zi?3:0MP<eVJ=0
+VJ1?M_mj>Da_E4blGRIJP`1
+Z1 dF:\fpga\counter\prj\simulation\modelsim
+w1632383480
+8F:/fpga/counter/rtl/counter.v
+FF:/fpga/counter/rtl/counter.v
+L0 1
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1632386698.656000
+!s107 F:/fpga/counter/rtl/counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/fpga/counter/rtl|F:/fpga/counter/rtl/counter.v|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+F:/fpga/counter/rtl -O0

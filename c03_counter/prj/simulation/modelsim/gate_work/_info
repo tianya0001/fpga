@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\fpga\counter\prj\simulation\modelsim
+vcounter
+IJ:9FgAM5fJ;c:cMO9YgVj2
+VJ1?M_mj>Da_E4blGRIJP`1
+Z1 dF:\fpga\counter\prj\simulation\modelsim
+w1632386795
+8counter_6_1200mv_85c_slow.vo
+Fcounter_6_1200mv_85c_slow.vo
+L0 31
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 hFz`<7^PMkg08:KdbNAag3
+!s85 0
+!s108 1632395439.440000
+!s107 counter_6_1200mv_85c_slow.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|counter_6_1200mv_85c_slow.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vcounter_tb
+!i10b 1
+!s100 _mI78`6o80mfkg5m=XTKL1
+I_YfOTON6gk1lLY81VRIbN3
+VN6X[[7nWg]oz4[ZCKXDXe0
+R1
+w1632386781
+8F:/fpga/counter/prj/../testbench/counter_tb.v
+FF:/fpga/counter/prj/../testbench/counter_tb.v
+L0 5
+R2
+r1
+!s85 0
+31
+!s108 1632395439.513000
+!s107 F:/fpga/counter/prj/../testbench/counter_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/fpga/counter/prj/../testbench|F:/fpga/counter/prj/../testbench/counter_tb.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+F:/fpga/counter/prj/../testbench -O0

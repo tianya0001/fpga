@@ -1,0 +1,49 @@
+# Reading D:/software/Quarteus II/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do mux_3to8_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying D:\software\Quarteus II\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\software\Quarteus II\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+. {mux_3to8_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux_3to8
+# 
+# Top level modules:
+# 	mux_3to8
+# 
+# vlog -vlog01compat -work work +incdir+F:/fpga/mux_3to8/prj/../testbench {F:/fpga/mux_3to8/prj/../testbench/mux_3to8_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux_3to8_tb
+# 
+# Top level modules:
+# 	mux_3to8_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  mux_3to8_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps mux_3to8_tb 
+# Loading work.mux_3to8_tb
+# Loading work.mux_3to8
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from mux_3to8_6_1200mv_85c_v_slow.sdo
+# Loading timing data from mux_3to8_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /mux_3to8_tb File: F:/fpga/mux_3to8/prj/../testbench/mux_3to8_tb.v
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break in Module mux_3to8_tb at F:/fpga/mux_3to8/prj/../testbench/mux_3to8_tb.v line 38
+# Simulation Breakpoint: Break in Module mux_3to8_tb at F:/fpga/mux_3to8/prj/../testbench/mux_3to8_tb.v line 38
+# MACRO ./mux_3to8_run_msim_gate_verilog.do PAUSED at line 17

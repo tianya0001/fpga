@@ -1,0 +1,82 @@
+|BCD_counter_top
+Clk => Clk.IN3
+Cin => Cin.IN1
+Rst_n => Rst_n.IN3
+Cout << BCD_counter:cnt2.Cout
+q[0] << BCD_counter:cnt0.q
+q[1] << BCD_counter:cnt0.q
+q[2] << BCD_counter:cnt0.q
+q[3] << BCD_counter:cnt0.q
+q[4] << BCD_counter:cnt1.q
+q[5] << BCD_counter:cnt1.q
+q[6] << BCD_counter:cnt1.q
+q[7] << BCD_counter:cnt1.q
+q[8] << BCD_counter:cnt2.q
+q[9] << BCD_counter:cnt2.q
+q[10] << BCD_counter:cnt2.q
+q[11] << BCD_counter:cnt2.q
+
+
+|BCD_counter_top|BCD_counter:cnt0
+Clk => cnt[0].CLK
+Clk => cnt[1].CLK
+Clk => cnt[2].CLK
+Clk => cnt[3].CLK
+Cin => Cout.IN1
+Cin => cnt[3].ENA
+Cin => cnt[2].ENA
+Cin => cnt[1].ENA
+Cin => cnt[0].ENA
+Rst_n => cnt[0].ACLR
+Rst_n => cnt[1].ACLR
+Rst_n => cnt[2].ACLR
+Rst_n => cnt[3].ACLR
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+q[0] <= cnt[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD_counter_top|BCD_counter:cnt1
+Clk => cnt[0].CLK
+Clk => cnt[1].CLK
+Clk => cnt[2].CLK
+Clk => cnt[3].CLK
+Cin => Cout.IN1
+Cin => cnt[3].ENA
+Cin => cnt[2].ENA
+Cin => cnt[1].ENA
+Cin => cnt[0].ENA
+Rst_n => cnt[0].ACLR
+Rst_n => cnt[1].ACLR
+Rst_n => cnt[2].ACLR
+Rst_n => cnt[3].ACLR
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+q[0] <= cnt[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD_counter_top|BCD_counter:cnt2
+Clk => cnt[0].CLK
+Clk => cnt[1].CLK
+Clk => cnt[2].CLK
+Clk => cnt[3].CLK
+Cin => Cout.IN1
+Cin => cnt[3].ENA
+Cin => cnt[2].ENA
+Cin => cnt[1].ENA
+Cin => cnt[0].ENA
+Rst_n => cnt[0].ACLR
+Rst_n => cnt[1].ACLR
+Rst_n => cnt[2].ACLR
+Rst_n => cnt[3].ACLR
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+q[0] <= cnt[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

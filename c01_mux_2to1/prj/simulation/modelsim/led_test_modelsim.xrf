@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, F:/fpga/c01_mux_2to1/rtl/led_test.v
+source_file = 1, ../testbenvh/test_led_tb.v
+source_file = 1, F:/fpga/c01_mux_2to1/prj/db/led_test.cbx.xml
+design_name = led_test
+instance = comp, \led_out~output , led_out~output, led_test, 1
+instance = comp, \a~input , a~input, led_test, 1
+instance = comp, \b~input , b~input, led_test, 1
+instance = comp, \key_in~input , key_in~input, led_test, 1
+instance = comp, \led_out~0 , led_out~0, led_test, 1

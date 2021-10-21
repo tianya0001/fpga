@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\fpga\mux_3to8\prj\simulation\modelsim
+vmux_3to8
+I]b9U>4cPWEm5IY8m9ojW>1
+V;iIlWY_kYkLBSIWfCc56=3
+Z1 dF:\fpga\mux_3to8\prj\simulation\modelsim
+w1632318450
+8F:/fpga/mux_3to8/prj/mux_3to8.v
+FF:/fpga/mux_3to8/prj/mux_3to8.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 W<B[G4Y>hkgm0IK[:HZmf2
+!s85 0
+!s108 1632319013.057000
+!s107 F:/fpga/mux_3to8/prj/mux_3to8.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/fpga/mux_3to8/prj|F:/fpga/mux_3to8/prj/mux_3to8.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+F:/fpga/mux_3to8/prj -O0
+vmux_3to8_tb
+!i10b 1
+!s100 NQ7O9RQkkI2_B371TDFg32
+ImT_d?JZ?Kz^HbfegWN60M2
+VH>1@kQ58PbTf]W7aC7DI]3
+R1
+w1632318921
+8F:/fpga/mux_3to8/prj/../testbench/mux_3to8_tb.v
+FF:/fpga/mux_3to8/prj/../testbench/mux_3to8_tb.v
+L0 5
+R2
+r1
+!s85 0
+31
+!s108 1632319013.126000
+!s107 F:/fpga/mux_3to8/prj/../testbench/mux_3to8_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/fpga/mux_3to8/prj/../testbench|F:/fpga/mux_3to8/prj/../testbench/mux_3to8_tb.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+F:/fpga/mux_3to8/prj/../testbench -O0

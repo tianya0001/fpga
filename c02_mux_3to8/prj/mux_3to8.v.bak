@@ -1,0 +1,23 @@
+module mux_3to8(a, b, c, out)
+
+	input a;
+	input b;
+	input c;
+	
+	output [7:0]out;
+
+	// 当a,b,c中任意一个信号发生变化时，执行always块中的程序
+	allways@(a, b, c) begin
+		case({a,b,c})
+			3'b000:
+			3'b001:
+			3'b010:
+			3'b011:
+			3'b100:
+			3'b101:
+			3'b110:
+			3'b111:
+			
+	end
+	
+endmodule

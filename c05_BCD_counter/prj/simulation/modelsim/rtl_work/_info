@@ -1,0 +1,68 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\fpga\c05_BCD_counter\prj\simulation\modelsim
+vBCD_counter
+I>LHO3hR[[MQF0c7QzmQ@[3
+VY]L`TaM2fjiR6ESWommbX3
+Z1 dF:\fpga\c05_BCD_counter\prj\simulation\modelsim
+w1633441816
+8F:/fpga/c05_BCD_counter/rtl/BCD_counter.v
+FF:/fpga/c05_BCD_counter/rtl/BCD_counter.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@b@c@d_counter
+Z4 !s92 -vlog01compat -work work +incdir+F:/fpga/c05_BCD_counter/rtl -O0
+!i10b 1
+!s100 1<[je4Q@V`Xab=^c5h;[>2
+!s85 0
+!s108 1633442315.444000
+!s107 F:/fpga/c05_BCD_counter/rtl/BCD_counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/fpga/c05_BCD_counter/rtl|F:/fpga/c05_BCD_counter/rtl/BCD_counter.v|
+!s101 -O0
+vBCD_counter_top
+IkczWilMzdM9RDcN4nZUSF3
+VeFC;Tf<G@]0gBl?l6E][N3
+R1
+w1633440721
+8F:/fpga/c05_BCD_counter/rtl/BCD_counter_top.v
+FF:/fpga/c05_BCD_counter/rtl/BCD_counter_top.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@b@c@d_counter_top
+!i10b 1
+!s100 ;o@hTzEO95l>Q?7gYgb8O3
+!s85 0
+!s108 1633442315.524000
+!s107 F:/fpga/c05_BCD_counter/rtl/BCD_counter_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/fpga/c05_BCD_counter/rtl|F:/fpga/c05_BCD_counter/rtl/BCD_counter_top.v|
+!s101 -O0
+vBCD_counter_top_tb
+!i10b 1
+!s100 =hVZWB]BA^_2MIW`;5d5M3
+Ii]3X=ULX?7Bcg=C1hlc:N1
+V4lk^<WKFkQNhnPcDS]olm3
+R1
+w1633440799
+8F:/fpga/c05_BCD_counter/prj/../testbench/BCD_counter_top_tb.v
+FF:/fpga/c05_BCD_counter/prj/../testbench/BCD_counter_top_tb.v
+L0 5
+R2
+r1
+!s85 0
+31
+!s108 1633442315.591000
+!s107 F:/fpga/c05_BCD_counter/prj/../testbench/BCD_counter_top_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/fpga/c05_BCD_counter/prj/../testbench|F:/fpga/c05_BCD_counter/prj/../testbench/BCD_counter_top_tb.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+F:/fpga/c05_BCD_counter/prj/../testbench -O0
+n@b@c@d_counter_top_tb

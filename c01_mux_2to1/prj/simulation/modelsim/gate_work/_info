@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\fpga\c01_mux_2to1\prj\simulation\modelsim
+vled_test
+ILMn?oWGamBN3obF6bSmS42
+VVa4cn_d1L^KKGGSoLl`O]3
+Z1 dF:\fpga\c01_mux_2to1\prj\simulation\modelsim
+w1632315083
+8led_test_6_1200mv_85c_slow.vo
+Fled_test_6_1200mv_85c_slow.vo
+L0 31
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 `z0F4]TKFM9z?dFcE8V^E2
+!s85 0
+!s108 1632315174.939000
+!s107 led_test_6_1200mv_85c_slow.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|led_test_6_1200mv_85c_slow.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vled_test_tb
+!i10b 1
+!s100 HRIoFEohIFiPPI5H[f@Bc3
+ImcGh<JWIF>WJ];QFfcEj?1
+ViJ]K<XJJjdnLO;MV]A>NX1
+R1
+w1632313853
+8F:/fpga/c01_mux_2to1/prj/../testbench/led_test_tb.v
+FF:/fpga/c01_mux_2to1/prj/../testbench/led_test_tb.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1632315175.005000
+!s107 F:/fpga/c01_mux_2to1/prj/../testbench/led_test_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/fpga/c01_mux_2to1/prj/../testbench|F:/fpga/c01_mux_2to1/prj/../testbench/led_test_tb.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+F:/fpga/c01_mux_2to1/prj/../testbench -O0

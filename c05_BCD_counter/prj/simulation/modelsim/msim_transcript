@@ -1,0 +1,47 @@
+# Reading D:/software/Quarteus II/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do BCD_counter_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\software\Quarteus II\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\software\Quarteus II\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+F:/fpga/c05_BCD_counter/rtl {F:/fpga/c05_BCD_counter/rtl/BCD_counter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module BCD_counter
+# 
+# Top level modules:
+# 	BCD_counter
+# vlog -vlog01compat -work work +incdir+F:/fpga/c05_BCD_counter/rtl {F:/fpga/c05_BCD_counter/rtl/BCD_counter_top.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module BCD_counter_top
+# 
+# Top level modules:
+# 	BCD_counter_top
+# 
+# vlog -vlog01compat -work work +incdir+F:/fpga/c05_BCD_counter/prj/../testbench {F:/fpga/c05_BCD_counter/prj/../testbench/BCD_counter_top_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module BCD_counter_top_tb
+# 
+# Top level modules:
+# 	BCD_counter_top_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  BCD_counter_top_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps BCD_counter_top_tb 
+# Loading work.BCD_counter_top_tb
+# Loading work.BCD_counter_top
+# Loading work.BCD_counter
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break in Module BCD_counter_top_tb at F:/fpga/c05_BCD_counter/prj/../testbench/BCD_counter_top_tb.v line 34
+# Simulation Breakpoint: Break in Module BCD_counter_top_tb at F:/fpga/c05_BCD_counter/prj/../testbench/BCD_counter_top_tb.v line 34
+# MACRO ./BCD_counter_run_msim_rtl_verilog.do PAUSED at line 18

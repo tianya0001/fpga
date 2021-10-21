@@ -1,0 +1,8 @@
+
+State Machine - |Hell|state
+Name state.CHECK_O state.CHECK_L2 state.CHECK_L1 state.CHECK_E state.CHECK_H 
+state.CHECK_H 0 0 0 0 0 
+state.CHECK_E 0 0 0 1 1 
+state.CHECK_L1 0 0 1 0 1 
+state.CHECK_L2 0 1 0 0 1 
+state.CHECK_O 1 0 0 0 1 

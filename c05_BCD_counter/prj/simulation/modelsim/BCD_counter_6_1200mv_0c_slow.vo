@@ -1,0 +1,261 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Full Version"
+
+// DATE "10/05/2021 20:41:23"
+
+// 
+// Device: Altera EP4CE22F17C6 Package FBGA256
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module BCD_counter (
+	SEGx,
+	SEGn);
+output 	[7:0] SEGx;
+output 	[3:0] SEGn;
+
+// Design Ports Information
+// SEGx[0]	=>  Location: PIN_C8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SEGx[1]	=>  Location: PIN_E6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SEGx[2]	=>  Location: PIN_E7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SEGx[3]	=>  Location: PIN_D8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SEGx[4]	=>  Location: PIN_E8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SEGx[5]	=>  Location: PIN_F8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SEGx[6]	=>  Location: PIN_F9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SEGx[7]	=>  Location: PIN_E9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SEGn[0]	=>  Location: PIN_C9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SEGn[1]	=>  Location: PIN_D9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SEGn[2]	=>  Location: PIN_E11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SEGn[3]	=>  Location: PIN_E10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("BCD_counter_6_1200mv_0c_v_slow.sdo");
+// synopsys translate_on
+
+wire \SEGx[0]~output_o ;
+wire \SEGx[1]~output_o ;
+wire \SEGx[2]~output_o ;
+wire \SEGx[3]~output_o ;
+wire \SEGx[4]~output_o ;
+wire \SEGx[5]~output_o ;
+wire \SEGx[6]~output_o ;
+wire \SEGx[7]~output_o ;
+wire \SEGn[0]~output_o ;
+wire \SEGn[1]~output_o ;
+wire \SEGn[2]~output_o ;
+wire \SEGn[3]~output_o ;
+
+
+// Location: IOOBUF_X23_Y34_N16
+cycloneive_io_obuf \SEGx[0]~output (
+	.i(vcc),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\SEGx[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \SEGx[0]~output .bus_hold = "false";
+defparam \SEGx[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X14_Y34_N16
+cycloneive_io_obuf \SEGx[1]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\SEGx[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \SEGx[1]~output .bus_hold = "false";
+defparam \SEGx[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X16_Y34_N16
+cycloneive_io_obuf \SEGx[2]~output (
+	.i(vcc),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\SEGx[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \SEGx[2]~output .bus_hold = "false";
+defparam \SEGx[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X23_Y34_N23
+cycloneive_io_obuf \SEGx[3]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\SEGx[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \SEGx[3]~output .bus_hold = "false";
+defparam \SEGx[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X20_Y34_N9
+cycloneive_io_obuf \SEGx[4]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\SEGx[4]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \SEGx[4]~output .bus_hold = "false";
+defparam \SEGx[4]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X20_Y34_N16
+cycloneive_io_obuf \SEGx[5]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\SEGx[5]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \SEGx[5]~output .bus_hold = "false";
+defparam \SEGx[5]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X34_Y34_N2
+cycloneive_io_obuf \SEGx[6]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\SEGx[6]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \SEGx[6]~output .bus_hold = "false";
+defparam \SEGx[6]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X29_Y34_N16
+cycloneive_io_obuf \SEGx[7]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\SEGx[7]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \SEGx[7]~output .bus_hold = "false";
+defparam \SEGx[7]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X31_Y34_N2
+cycloneive_io_obuf \SEGn[0]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\SEGn[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \SEGn[0]~output .bus_hold = "false";
+defparam \SEGn[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X31_Y34_N9
+cycloneive_io_obuf \SEGn[1]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\SEGn[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \SEGn[1]~output .bus_hold = "false";
+defparam \SEGn[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X45_Y34_N9
+cycloneive_io_obuf \SEGn[2]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\SEGn[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \SEGn[2]~output .bus_hold = "false";
+defparam \SEGn[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X45_Y34_N16
+cycloneive_io_obuf \SEGn[3]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\SEGn[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \SEGn[3]~output .bus_hold = "false";
+defparam \SEGn[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+assign SEGx[0] = \SEGx[0]~output_o ;
+
+assign SEGx[1] = \SEGx[1]~output_o ;
+
+assign SEGx[2] = \SEGx[2]~output_o ;
+
+assign SEGx[3] = \SEGx[3]~output_o ;
+
+assign SEGx[4] = \SEGx[4]~output_o ;
+
+assign SEGx[5] = \SEGx[5]~output_o ;
+
+assign SEGx[6] = \SEGx[6]~output_o ;
+
+assign SEGx[7] = \SEGx[7]~output_o ;
+
+assign SEGn[0] = \SEGn[0]~output_o ;
+
+assign SEGn[1] = \SEGn[1]~output_o ;
+
+assign SEGn[2] = \SEGn[2]~output_o ;
+
+assign SEGn[3] = \SEGn[3]~output_o ;
+
+endmodule

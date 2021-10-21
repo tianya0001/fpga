@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\fpga\c07_Hello\prj\simulation\modelsim
+vHell
+Il<WUV8cMW=XS`_f?M:N9H2
+VmKHYKg;980FX^;>j15K?X2
+Z1 dF:\fpga\c07_Hello\prj\simulation\modelsim
+w1634625722
+8Hell_6_1200mv_85c_slow.vo
+FHell_6_1200mv_85c_slow.vo
+L0 31
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@hell
+!i10b 1
+!s100 kIS=eaOCQn8hN8m9llBLh1
+!s85 0
+!s108 1634625755.711000
+!s107 Hell_6_1200mv_85c_slow.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|Hell_6_1200mv_85c_slow.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vHell_tb
+!i10b 1
+!s100 Ili=2;l]eT@0;EX3`;IMb0
+IHa:n72m[_mFg6z6kTbzm;0
+VEU;SiPRB@Uj9B5YW:4n^82
+R1
+w1634625053
+8F:/fpga/c07_Hello/prj/../testbench/Hell_tb.v
+FF:/fpga/c07_Hello/prj/../testbench/Hell_tb.v
+L0 4
+R2
+r1
+!s85 0
+31
+!s108 1634625755.880000
+!s107 F:/fpga/c07_Hello/prj/../testbench/Hell_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/fpga/c07_Hello/prj/../testbench|F:/fpga/c07_Hello/prj/../testbench/Hell_tb.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+F:/fpga/c07_Hello/prj/../testbench -O0
+n@hell_tb

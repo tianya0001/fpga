@@ -1,0 +1,65 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\fpga\c04_counter_ipcore\prj\simulation\modelsim
+vcounter
+IboF0XGb4ZlOUchhGz3a_L2
+V<;9KhZ7cXFZR@SGfcIVkX0
+Z1 dF:\fpga\c04_counter_ipcore\prj\simulation\modelsim
+w1632472429
+8F:/fpga/c04_counter_ipcore/rtl/ip/counter.v
+FF:/fpga/c04_counter_ipcore/rtl/ip/counter.v
+L0 39
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 T?QH[HIhJT1kS6bj8O<a10
+!s85 0
+!s108 1632487554.159000
+!s107 F:/fpga/c04_counter_ipcore/rtl/ip/counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/fpga/c04_counter_ipcore/rtl/ip|F:/fpga/c04_counter_ipcore/rtl/ip/counter.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+F:/fpga/c04_counter_ipcore/rtl/ip -O0
+vcounter_ipcore
+IRR48f9L>>`BAzagP6dF`l3
+VBXPfXffeh5GSE23GQ2fa[1
+R1
+w1632473367
+8F:/fpga/c04_counter_ipcore/rtl/counter_ipcore.v
+FF:/fpga/c04_counter_ipcore/rtl/counter_ipcore.v
+L0 1
+R2
+r1
+31
+R3
+!i10b 1
+!s100 ^`[TLF:c_dgGjMQG;_hOR3
+!s85 0
+!s108 1632487554.222000
+!s107 F:/fpga/c04_counter_ipcore/rtl/counter_ipcore.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/fpga/c04_counter_ipcore/rtl|F:/fpga/c04_counter_ipcore/rtl/counter_ipcore.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+F:/fpga/c04_counter_ipcore/rtl -O0
+vcounter_ipcore_tb
+!i10b 1
+!s100 A0z0ZBcZSkNLlo3<7LN;01
+I5jgQ^]P[D1na@HTe=eW]z1
+V79W;X15MoI9n1f1@gdkO[2
+R1
+w1632487439
+8F:/fpga/c04_counter_ipcore/prj/../testbench/counter_ipcore_tb.v
+FF:/fpga/c04_counter_ipcore/prj/../testbench/counter_ipcore_tb.v
+L0 4
+R2
+r1
+!s85 0
+31
+!s108 1632487554.292000
+!s107 F:/fpga/c04_counter_ipcore/prj/../testbench/counter_ipcore_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/fpga/c04_counter_ipcore/prj/../testbench|F:/fpga/c04_counter_ipcore/prj/../testbench/counter_ipcore_tb.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+F:/fpga/c04_counter_ipcore/prj/../testbench -O0
