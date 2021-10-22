@@ -57,6 +57,10 @@ module key(clk, rst, key_in, key_flag, key_state);
 					else if(cnt <= 20'd999_999)
 				end
 				
+				DOWN: begin
+				
+				end
+				
 			endcase
 			
 			/* 如果计数使能，则开始计数 */
