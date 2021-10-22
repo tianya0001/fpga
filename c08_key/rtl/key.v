@@ -32,33 +32,42 @@ module key(clk, rst, key_in, key_flag, key_state);
 			
 			/* 状态机 */
 			case(state)
+				
 				IDLE: begin
-					// IDLE状态下，
-					// 如果按键按下，状态切换到FILTER0，计数器开始计数
+					// IDLE状态下，key_state = 0
+					key_state <= 1'b0;
+					// 计数器禁用，计数值清零
+					cnt_en <= 1'b0;
+					cnt <= 20'd0;
+					// IDLE状态下，如果按键按下，状态切换到FILTER0
 					if(!key_in) begin
 						state <= FILTER0;
-						cnt_en <= 1'b1;
 					end
-					else begin	// 否则状态保持为IDLE，计数器停止计数，计数器清零
+					else begin	// 否则状态保持为IDLE
 						state <= IDLE;
-						cnt_en <= 1'b0;
-						cnt <= 20'd0;
 					end
 				end
 				
 				FILTER0: begin
-					if(cnt >= 20'd999_999 && (!key_in)) begin
-						// 如果计数满，并且按键被按下，
-						// 状态切换为DOWN，停止计时，计数器清零
+					// 如果处于FILTER0状态，key_state = 0，开启定时器计数
+					key_state <= 1'b0;
+					cnt_en <= 1'b1;
+					if(cnt_full && (!key_in)) begin
+						// 如果按键按下超过20ms并且按键处于按下的状态，则切换到DOWN状态
 						state <= DOWN;
-						cnt_en <= 1'b0;
-						cnt <= cnt_en <= 1'b0;
 					end
-					else if(cnt <= 20'd999_999)
+					else if(!cnt_full) begin
+						// 如果计数未满，状态保持为FILTER0
+						state <= FILTER0;
+					end
+					else if() begin
+						// 如果计数已满，按键处于松开状态，状态切换到IDLE
+						state <= IDLE;
+					end
 				end
 				
 				DOWN: begin
-				
+					key_state <= 1'b1;
 				end
 				
 			endcase
@@ -66,6 +75,14 @@ module key(clk, rst, key_in, key_flag, key_state);
 			/* 如果计数使能，则开始计数 */
 			if(cnt_en) begin
 				cnt <= cnt + 1'b1;
+			end
+			
+			/* 计数满标志更新 */
+			if(cnt >= 20'd999_999) begin
+				cnt_full <= 1'b1;
+			end
+			else begin
+				cnt_full <= 1'b0;
 			end
 		end
 	end
