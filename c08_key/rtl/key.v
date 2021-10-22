@@ -33,13 +33,16 @@ module key(clk, rst, key_in, key_flag, key_state);
 			/* 状态机 */
 			case(state)
 				IDLE: begin
+					// IDLE状态下，
 					// 如果按键按下，状态切换到FILTER0，计数器开始计数
 					if(!key_in) begin
 						state <= FILTER0;
 						cnt_en <= 1'b1;
 					end
-					else begin	// 否则状态保持为IDLE
+					else begin	// 否则状态保持为IDLE，计数器停止计数，计数器清零
 						state <= IDLE;
+						cnt_en <= 1'b0;
+						cnt <= 20'd0;
 					end
 				end
 				
