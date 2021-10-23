@@ -22,7 +22,7 @@ module key(clk, rst, key_in, key_flag, key_state);
 	reg 			cnt_en;		// 计数器使能寄存器
 	reg 			cnt_full;	// 计数满标志
 	
-	always@(posedge clk or posedge rst) begin
+	always@(posedge clk or negedge rst) begin
 		if(!rst) begin
 			state <= IDLE;		// 状态复位到IDLE
 			cnt_en <= 1'b0;	// 计数器停止计时
@@ -60,14 +60,57 @@ module key(clk, rst, key_in, key_flag, key_state);
 						// 如果计数未满，状态保持为FILTER0
 						state <= FILTER0;
 					end
-					else if() begin
+					else if(cnt_full && key_in) begin
 						// 如果计数已满，按键处于松开状态，状态切换到IDLE
 						state <= IDLE;
+					end
+					else begin
+						// 其他，状态保持
+						state <= FILTER0;
 					end
 				end
 				
 				DOWN: begin
+					// DOWN状态，key_state = 1，禁用计数器
 					key_state <= 1'b1;
+					cnt_en <= 1'b0;
+					
+					if(key_in) begin
+						// 如果按键松开，状态切换到FILTER1
+						state <= FILTER1;
+					end
+					else begin
+						// 其他情况状态保持
+						state <= DOWN;
+					end
+				end
+				
+				FILTER1: begin
+					// FILTER1状态下，定时器开启，key_state = 1;
+					key_state <= 1'b1;
+					cnt_en <= 1'b1;
+					
+					if(cnt_full && (!key_in)) begin
+						// 如果计数已满，按键保持按下，状态回到DOWN
+						state <= DOWN;
+					end
+					else if(cnt_full && key_in) begin
+						// 如果计数已满，按键松开状态切换到IDLE
+						state <= IDLE;
+					end
+					else if(!cnt_full) begin
+						// 如果计数未满，状态保持为FILTER1
+						state <= FILTER1;
+					end
+					else begin
+						// 其他意外情况，状态保持为FILTER1
+						state <= FILTER1;
+					end
+				end
+				
+				default: begin
+					// 意外情况，状态回到IDLE
+					state <= IDLE;
 				end
 				
 			endcase
