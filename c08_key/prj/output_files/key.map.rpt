@@ -1,5 +1,5 @@
 Analysis & Synthesis report for key
-Sat Oct 23 16:22:21 2021
+Sat Oct 23 20:11:35 2021
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -43,7 +43,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Oct 23 16:22:21 2021       ;
+; Analysis & Synthesis Status        ; Successful - Sat Oct 23 20:11:35 2021       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; key                                         ;
 ; Top-level Entity Name              ; key                                         ;
@@ -52,7 +52,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 35                                          ;
 ;     Dedicated logic registers      ; 27                                          ;
 ; Total registers                    ; 27                                          ;
-; Total pins                         ; 5                                           ;
+; Total pins                         ; 4                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -194,12 +194,12 @@ applicable agreement for further details.
 ;     -- Dedicated logic registers            ; 27        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 5         ;
+; I/O pins                                    ; 4         ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 27        ;
-; Total fan-out                               ; 215       ;
-; Average fan-out                             ; 2.99      ;
+; Total fan-out                               ; 214       ;
+; Average fan-out                             ; 3.06      ;
 +---------------------------------------------+-----------+
 
 
@@ -208,7 +208,7 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |key                       ; 35 (35)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 5    ; 0            ; |key                ; work         ;
+; |key                       ; 35 (35)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 4    ; 0            ; |key                ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -265,25 +265,24 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Sat Oct 23 16:22:20 2021
+    Info: Processing started: Sat Oct 23 20:11:34 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off key -c key
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file /fpga/c08_key/rtl/key.v
     Info (12023): Found entity 1: key
+Info (12021): Found 1 design units, including 1 entities, in source file /fpga/c08_key/testbench/key_tb.v
+    Info (12023): Found entity 1: key_tb
 Info (12127): Elaborating entity "key" for the top level hierarchy
-Warning (10034): Output port "key_flag" at key.v(7) has no driver
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "key_flag" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 40 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 39 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 2 output pins
+    Info (21059): Implemented 1 output pins
     Info (21061): Implemented 35 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 3 warnings
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4634 megabytes
-    Info: Processing ended: Sat Oct 23 16:22:21 2021
+    Info: Processing ended: Sat Oct 23 20:11:35 2021
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

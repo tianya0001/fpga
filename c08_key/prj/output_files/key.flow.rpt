@@ -1,5 +1,5 @@
 Flow report for key
-Sat Oct 23 16:22:21 2021
+Sat Oct 23 20:11:35 2021
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Oct 23 16:22:21 2021       ;
+; Flow Status                        ; Successful - Sat Oct 23 20:11:35 2021       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; key                                         ;
 ; Top-level Entity Name              ; key                                         ;
@@ -51,7 +51,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 35                                          ;
 ;     Dedicated logic registers      ; 27                                          ;
 ; Total registers                    ; 27                                          ;
-; Total pins                         ; 5                                           ;
+; Total pins                         ; 4                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/23/2021 16:22:21 ;
+; Start date & time ; 10/23/2021 20:11:34 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; key                 ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 185410942076450.163497734106864 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 185410942076450.163499109404452 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                     ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)       ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --             ;
