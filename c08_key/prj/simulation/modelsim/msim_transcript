@@ -36,10 +36,10 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-add wave -position insertpoint sim:/key_tb/u0/*
 # Break in Module key_tb at F:/fpga/c08_key/prj/../testbench/key_tb.v line 56
 # Simulation Breakpoint: Break in Module key_tb at F:/fpga/c08_key/prj/../testbench/key_tb.v line 56
 # MACRO ./key_run_msim_rtl_verilog.do PAUSED at line 17
+add wave -position insertpoint sim:/key_tb/u0/*
 restart
 run -all
 # Break in Module key_tb at F:/fpga/c08_key/prj/../testbench/key_tb.v line 56

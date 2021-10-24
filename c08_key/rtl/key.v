@@ -1,8 +1,8 @@
-module key(clk, rst, key_in, key_state);
+module key(clk, rst, key, key_state);
 
 	input			clk;
 	input			rst;
-	input			key_in;
+	input			key;
 
 	output reg	key_state;
 	
@@ -21,13 +21,23 @@ module key(clk, rst, key_in, key_state);
 	reg 			cnt_en;		// 计数器使能寄存器
 	reg 			cnt_full;	// 计数满标志
 	
+	reg			key_s0,key_s1;		// 同步寄存器
+	reg 			key_in;
+	
 	always@(posedge clk or negedge rst) begin
 		if(!rst) begin
 			state <= IDLE;		// 状态复位到IDLE
 			cnt_en <= 1'b0;	// 计数器停止计时
 			cnt <= 20'd0;		// 计数器清零
+			/* 复位同步寄存器 */
+			key_s0 <= 1'b1;
+			key_s1 <= 1'b1;
 		end
 		else begin
+			key_s0 <= key;
+			key_s1 <= key_s0;
+			key_in <= key_s1;
+			
 			
 			/* 状态机 */
 			case(state)

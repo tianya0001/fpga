@@ -12,7 +12,7 @@ module key_tb;
 
 	key u0(	.clk(clk), 
 				.rst(rst), 
-				.key_in(key_in), 
+				.key(key_in), 
 				.key_state(key_state)
 			);
 
