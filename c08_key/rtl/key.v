@@ -17,7 +17,7 @@ module key(clk, rst, key_in, key_state);
 	reg 			key_temp0, key_temp1;
 	wire 			pedge, nedge;
 	
-	reg[19:0] 	cnt;			// 计数器寄存器
+	reg[20:0] 	cnt;			// 计数器寄存器
 	reg 			cnt_en;		// 计数器使能寄存器
 	reg 			cnt_full;	// 计数满标志
 	
@@ -70,10 +70,10 @@ module key(clk, rst, key_in, key_state);
 				end
 				
 				DOWN: begin
-					// DOWN状态，key_state = 1，禁用计数器
+					// DOWN状态，key_state = 1，禁用计数器，计数器清零
 					key_state <= 1'b1;
 					cnt_en <= 1'b0;
-					
+					cnt <= 20'd0;
 					if(key_in) begin
 						// 如果按键松开，状态切换到FILTER1
 						state <= FILTER1;

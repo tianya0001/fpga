@@ -25,19 +25,35 @@ module key_tb;
 	
 	initial begin
 		rst  = 0;
-		#(`clock_priod * 5);
+		#(`clock_priod * 50);
 		rst = 1;
-		#(`clock_priod * 5);
+		#(`clock_priod * 500);
 		
-		// 抖动
-		repeat(10) begin
+		repeat(2) begin
+			// 按下抖动
+			repeat(100) begin
+				#(`clock_priod * 1000);
+				key_in = ~key_in;
+			end
+			
+			// 按下保持
 			#(`clock_priod);
-			key_in = ~key_in;
+			key_in = 0;
+			#(`clock_priod * 1000*1000);
+			
+			// 弹起抖动
+			repeat(100) begin
+				#(`clock_priod * 1000);
+				key_in = ~key_in;
+			end
+			
+			// 弹起保持
+			#(`clock_priod * 100);
+			key_in = 1;
+			#(`clock_priod * 1000*1000);
 		end
-		// 抖动停止
-		#(`clock_priod);
-		key_in = 0;
-		#(`clock_priod * 200);
+		
+		$stop;
 	end
 	
 endmodule

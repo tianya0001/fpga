@@ -1,0 +1,45 @@
+# Reading D:/software/Quarteus II/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
+# do key_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\software\Quarteus II\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\software\Quarteus II\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+F:/fpga/c08_key/rtl {F:/fpga/c08_key/rtl/key.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module key
+# 
+# Top level modules:
+# 	key
+# 
+# vlog -vlog01compat -work work +incdir+F:/fpga/c08_key/prj/../testbench {F:/fpga/c08_key/prj/../testbench/key_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module key_tb
+# 
+# Top level modules:
+# 	key_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  key_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps key_tb 
+# Loading work.key_tb
+# Loading work.key
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+add wave -position insertpoint sim:/key_tb/u0/*
+# Break in Module key_tb at F:/fpga/c08_key/prj/../testbench/key_tb.v line 56
+# Simulation Breakpoint: Break in Module key_tb at F:/fpga/c08_key/prj/../testbench/key_tb.v line 56
+# MACRO ./key_run_msim_rtl_verilog.do PAUSED at line 17
+restart
+run -all
+# Break in Module key_tb at F:/fpga/c08_key/prj/../testbench/key_tb.v line 56

@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\fpga\c08_key\prj\simulation\modelsim
+vkey
+IGT61e>SWKih0^bXKSZz0l0
+V?NJTeW6diU4hW=S>H^P^W0
+Z1 dF:\fpga\c08_key\prj\simulation\modelsim
+w1635043774
+8F:/fpga/c08_key/rtl/key.v
+FF:/fpga/c08_key/rtl/key.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 a0K=01:0T8D7V=goTDRVS0
+!s85 0
+!s108 1635043798.807000
+!s107 F:/fpga/c08_key/rtl/key.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/fpga/c08_key/rtl|F:/fpga/c08_key/rtl/key.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+F:/fpga/c08_key/rtl -O0
+vkey_tb
+!i10b 1
+!s100 I@TB=Ol]=R=cjk357<3O<0
+IVVP;85zj5_BX1l4ZJ3K[=3
+VMWkSRUI8[STZ7Ie39DQco1
+R1
+w1635043777
+8F:/fpga/c08_key/prj/../testbench/key_tb.v
+FF:/fpga/c08_key/prj/../testbench/key_tb.v
+L0 5
+R2
+r1
+!s85 0
+31
+!s108 1635043798.897000
+!s107 F:/fpga/c08_key/prj/../testbench/key_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/fpga/c08_key/prj/../testbench|F:/fpga/c08_key/prj/../testbench/key_tb.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+F:/fpga/c08_key/prj/../testbench -O0
